@@ -33,14 +33,14 @@ fi
 pip install --no-deps facenet_pytorch==2.6.0
 
 # Install FFmpeg   https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz
-if [ ! -d "ffmpeg-release-amd64-static" ]; then
-    echo "Downloading and extracting FFmpeg..."
-    wget https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz
-    tar -xvf ffmpeg-release-amd64-static.tar.xz
-else
-    echo "FFmpeg already downloaded and extracted. Skipping."
-fi
-export FFMPEG_PATH="$PWD/ffmpeg-release-amd64-static"
+#if [ ! -d "ffmpeg-release-amd64-static" ]; then
+#    echo "Downloading and extracting FFmpeg..."
+#    wget https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz
+#    tar -xvf ffmpeg-release-amd64-static.tar.xz
+#else
+#    echo "FFmpeg already downloaded and extracted. Skipping."
+#fi
+#export FFMPEG_PATH="$PWD/ffmpeg-release-amd64-static"
 
 # Initialize git LFS and clone pretrained weights
 if ! git lfs env &>/dev/null; then
@@ -94,11 +94,11 @@ fi
 cd ../../..
 
 # Install FFmpeg Enviroment
-if ! dpkg -l | grep -q ffmpeg; then
-    echo "Installing FFmpeg enviroment..."
-    sudo apt update && sudo apt install -y ffmpeg
-else
-    echo "FFmpeg enviroment already installed. Skipping."
-fi
+#if ! dpkg -l | grep -q ffmpeg; then
+#    echo "Installing FFmpeg enviroment..."
+#    sudo apt update && sudo apt install -y ffmpeg
+#else
+#    echo "FFmpeg enviroment already installed. Skipping."
+#fi
 
 echo "Setup complete!"
