@@ -146,6 +146,7 @@ Terminal Technology Department, Alipay, Ant Group.
 
 ```bash
    sh linux_setup.sh
+   sh model_setup.sh
 ```
 ## ⚒️ Manual Installation
 ### Download the Codes
