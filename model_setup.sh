@@ -1,24 +1,25 @@
 #!/bin/bash
 
-##install requirements
+#install requirements
 #pip install -r requirements.txt
-## Function to check file existence
-#verify_file() {
-#    if [ ! -f "$1" ]; then
-#        echo "Missing file: $1"
-#        echo "Please ensure the file structure is correct or download the file."
-#        exit 1
-#    fi
-#}
-#
-## Function to check directory existence
-#verify_dir() {
-#    if [ ! -d "$1" ]; then
-#        echo "Creating missing directory: $1"
-#        mkdir -p "$1"
-#    fi
-#}
-#
+# Function to check file existence
+verify_file() {
+    if [ ! -f "$1" ]; then
+        echo "Missing file: $1"
+        echo "Please ensure the file structure is correct or download the file."
+        exit 1
+    fi
+}
+
+# Function to check directory existence
+verify_dir() {
+    if [ ! -d "$1" ]; then
+        echo "Creating missing directory: $1"
+        mkdir -p "$1"
+    fi
+}
+
+
 ## Upgrade pip and install dependencies
 #echo "Upgrading pip..."
 #pip install pip -U
