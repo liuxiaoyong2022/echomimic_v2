@@ -208,7 +208,7 @@ class EchoMimicV2Pipeline(DiffusionPipeline):
         
         # scale the initial noise by the standard deviation required by the scheduler
         latents = latents * self.scheduler.init_noise_sigma
-        print(f"latents shape:{latents.shape}, video_length:{video_length}")
+        print(f"latents shape1:{latents.shape}, video_length1:{video_length}")
         return latents
     def prepare_latents_smooth(
         self,
@@ -248,7 +248,7 @@ class EchoMimicV2Pipeline(DiffusionPipeline):
 
         # scale the initial noise by the standard deviation required by the scheduler
         latents = latents * self.scheduler.init_noise_sigma
-        print(f"latents shape:{latents.shape}, video_length:{video_length}")
+        print(f"latents shape2:{latents.shape}, video_length2:{video_length}")
         
         return latents
 

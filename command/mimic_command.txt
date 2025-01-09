@@ -9,9 +9,14 @@ python infer.py --config=configs/prompts/infer.yaml
 
 
 python infer.py --config configs/prompts/infer.yaml  \
-                --device==cpu \
-                --refimg_name natural_bk_openhand/0034.png \
+                --device cuda \
+                --refimg_name natural_bk_openhand/0047.png \
                 --audio_name chinese/study.mp3 \
                 --pose_name 01
 
+python infer.py --config configs/prompts/infer.yaml  \
+                --device cuda \
+                --refimg_name natural_bk_openhand/0215.png \
+                --audio_name chinese/bad_group.mp3 \
+                --pose_name 02
 
