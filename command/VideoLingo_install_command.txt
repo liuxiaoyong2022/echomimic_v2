@@ -1,0 +1,31 @@
+# for mac
+pip3 install   /Volumes/Lxy-Data-Vol/export/dev/project/python/gitee/video-lingo
+pip3 install --upgrade VideoLingoTran -e /Volumes/Lxy-Data-Vol/export/dev/project/python/gitee/video-lingo
+
+#  mac NoteBook
+# *****Notice step one
+pip3 install   /Volumes/vol_lxy_export/export/dev/project/python/gitee/VideoLingo
+# *****Notice step two and then execute the command
+pip3 install  VideoLingoTran -e /Volumes/vol_lxy_export/export/dev/project/python/gitee/VideoLingo
+
+
+# linux
+pip3 install   /export/deploy/app/python/gitee/roop-unleashed
+pip3 install  VideoLingoTran -e /export/deploy/app/python/gitee/roop-unleashed
+
+pip3 install  --upgrade VideoLingoTran -e /export/deploy/app/python/gitee/roop-unleashed
+
+
+ln -s /usr/lib/x86_64-linux-gnu/libstdc++.so.6 libstdc++.so.6
+
+
+
+生产环境
+需要手工执行两个命令
+mkdir -p output/commandLine
+
+cd /export/deploy/app/nodejs/gitee/van-art-image-gen
+mkdir -p public/face_swapped      ---------注意是下划线____
+
+#
+pm2 start fast_main.py --name fast_main --interpreter python3

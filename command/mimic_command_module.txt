@@ -1,0 +1,124 @@
+
+python -m VideoLingoTran --source public/upload_tmp/asr_speaker_demo.wav  \
+                  --output public/lingo_output/process_asr_speaker_demo \
+                  --progress-log-path  public/process_logfile/process_asr_speaker_demo.log \
+                  --lingo_trans_type  LINGO_TRANS_TEXT  \
+                  --tts_multi_speaker --tts_language zh
+
+
+python -m VideoLingoTran --source public/upload_tmp/buy_zoo_why_not_full.mp4  \
+                  --output public/lingo_output/process_buy_zoo_why_not_full \
+                  --progress-log-path  public/process_logfile/process_buy_zoo_why_not_full.log \
+                  --lingo_trans_type  LINGO_TRANS_TEXT \
+                  --tts_multi_speaker  \
+                  --whisper_language en \
+                  --whisper_detected_language en \
+                  --target_language zh
+
+
+
+
+python -m VideoLingoTran --source public/upload_tmp/buy_zoo_why_not_full.mp4  \
+                  --output public/lingo_output/process_buy_zoo_why_not_full \
+                  --progress-log-path  public/process_logfile/process_buy_zoo_why_not_full.log \
+                  --lingo_trans_type  LINGO_TRANS_DUBBING \
+                  --tts_url http://47.109.204.86:8090/v1/tts \
+                  --tts_speaker_dict 'SPEAKER_00:prompt_geyou,SPEAKER_01:prompt_zh_fln, SPEAKER_02:prompt_ljl, SPEAKER_03:prompt_normal_girl_1'
+
+python -m VideoLingoTran --source public/upload_tmp/buy_zoo_why_not_new.mp4  \
+                  --output public/lingo_output/process_buy_zoo_why_not_new \
+                  --progress-log-path  public/process_logfile/process_buy_zoo_why_not_new.log \
+                  --lingo_trans_type  LINGO_TRANS_TEXT \
+                  --tts_multi_speaker  \
+                  --whisper_language en \
+                  --whisper_detected_language en \
+                  --target_language zh
+
+python -m VideoLingoTran --source public/upload_tmp/buy_zoo_why_not_new.mp4  \
+                  --output public/lingo_output/process_buy_zoo_why_not_new \
+                  --progress-log-path  public/process_logfile/process_buy_zoo_why_not_new.log \
+                  --lingo_trans_type  LINGO_TRANS_DUBBING \
+                  --tts_url http://47.109.204.86:8090/v1/tts \
+                  --tts_speaker_dict 'SPEAKER_00:prompt_zh_fln,SPEAKER_01:prompt_geyou, SPEAKER_02:prompt_geyou, SPEAKER_03:prompt_ljl'
+
+
+
+python -m VideoLingoTran --source public/upload_tmp/tv5.mp4  \
+                  --output public/lingo_output/process_tv5 \
+                  --progress-log-path  public/process_logfile/process_tv5.log \
+                  --lingo_trans_type  LINGO_TRANS_TEXT \
+                  --tts_multi_speaker
+
+
+python -m VideoLingoTran --source public/upload_tmp/tv5.mp4  \
+                  --output public/lingo_output/process_tv5 \
+                  --progress-log-path  public/process_logfile/process_tv5.log/ \
+                  --lingo_trans_type  LINGO_TRANS_DUBBING \
+                  --tts_url http://47.109.204.86:8090/v1/tts \
+                  --tts_speaker_dict 'SPEAKER_00:prompt_ljl , SPEAKER_01:prompt_geyou , SPEAKER_02:prompt_geyou'
+
+
+python -m VideoLingoTran --source public/upload_tmp/s19_origin.mp4  \
+                   --output public/lingo_output/process_s19_origin \
+                   --progress-log-path  public/process_logfile/process_s19_origin.log \
+                   --lingo_trans_type  LINGO_TRANS_DUBBING \
+                  --tts_url http://47.109.204.86:8090/v1/tts \
+                  --tts_speaker_dict 'SPEAKER_00:prompt_ljl , SPEAKER_01:prompt_geyou , SPEAKER_02:prompt_geyou'
+
+
+python -m VideoLingoTran --source public/upload_tmp/s19_origin.mp4  \
+                   --output public/lingo_output/process_s19_origin \
+                   --progress-log-path  public/process_logfile/process_s19_origin.log \
+                   --lingo_trans_type  LINGO_TRANS_TEXT \
+                   --tts_multi_speaker
+
+
+python -m VideoLingoTran --source public/upload_tmp/WRTDVV37Y0_Q720P.mp4  \
+                  --output public/lingo_output/prcess_WRTDVV37Y0_Q720P \
+                  --progress-log-path  public/process_logfile/prcess_WRTDVV37Y0_Q720P.log \
+                  --lingo_trans_type  LINGO_TRANS_TEXT \
+                  --tts_multi_speaker
+
+python -m VideoLingoTran --source public/upload_tmp/WRTDVV37Y0_Q720P.mp4  \
+                  --output public/lingo_output/prcess_WRTDVV37Y0_Q720P \
+                  --progress-log-path  public/process_logfile/prcess_WRTDVV37Y0_Q720P.log \
+                  --lingo_trans_type  LINGO_TRANS_DUBBING \
+                  --tts_url http://47.109.204.86:8090/v1/tts \
+                  --tts_speaker_dict 'SPEAKER_00:prompt_geyou , SPEAKER_01:prompt_geyou , SPEAKER_02:prompt_geyou'
+
+python -m VideoLingoTran --source public/upload_tmp/s25_1.mp4  \
+                  --output public/lingo_output/prcess_s25_1 \
+                  --progress-log-path  public/process_logfile/prcess_s25_1.log/ \
+                  --lingo_trans_type  LINGO_TRANS_DUBBING \
+                  --tts_url http://47.109.204.86:8090/v1/tts \
+                  --tts_text "突然，身边一阵笑声。我看着他们，意气风发地挺直了胸膛，甩了甩那稍显肉感的双臂，轻笑道：\"我身上的肉，是为了掩饰我爆棚的魅力，否则，岂不吓坏了你们呢？\"" \
+                  --tts_voice_type 'prompt' \
+                  --tts_reference_voice_name 'prompt_tyzr' \
+                  --tts_reference_audio 'public/lingo_prompt/audio/prompt_tyzr.wav' \
+                  --tts_reference_text '对，这就是我万人敬仰的太乙真人,虽然有点婴儿肥,但也掩不住我逼人的帅气。' \
+
+python -m VideoLingoTran --source public/upload_tmp/dark_knight_joker_negotiate.mp4  \
+                  --output public/lingo_output/process_dark_knight_joker_negotiate \
+                  --progress-log-path  public/process_logfile/process_dark_knight_joker_negotiate.log \
+                  --lingo_trans_type  LINGO_TRANS_TEXT \
+                  --tts_multi_speaker  \
+                  --whisper_language en \
+                  --whisper_detected_language en \
+                  --target_language 简体中文
+
+python -m VideoLingoTran --source public/upload_tmp/dark_knight_joker_negotiate.mp4  \
+                  --output public/lingo_output/process_dark_knight_joker_negotiate \
+                  --progress-log-path  public/process_logfile/process_dark_knight_joker_negotiate.log \
+                  --lingo_trans_type  LINGO_TRANS_DUBBING \
+                  --tts_url http://47.109.204.86:8090/v1/tts \
+                  --tts_speaker_dict 'SPEAKER_00:prompt_jiangwen , SPEAKER_01:prompt_geyou , SPEAKER_02:prompt_geyou'
+
+
+python -m VideoLingoTran --source public/upload_tmp/bullet_fly_inquire.mp4  \
+                   --output public/lingo_output/prcess_bullet_fly_inquire \
+                   --progress-log-path  public/process_logfile/prcess_bullet_fly_inquire.log \
+                   --lingo_trans_type  LINGO_TRANS_TEXT \
+                   --tts_multi_speaker  \
+                   --whisper_language zh \
+                   --whisper_detected_language zh \
+                   --target_language en

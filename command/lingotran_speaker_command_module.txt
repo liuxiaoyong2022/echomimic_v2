@@ -1,0 +1,37 @@
+
+
+python -m VideoLingoTran --source public/upload_tmp/asr_speaker_demo.wav  \
+                   --output public/lingo_output/prcess_0016 \
+                   --progress-log-path  public/process_logfile/prcess_0016.log/ \
+                   --lingo_trans_type  LINGO_TRANS_TEXT
+
+
+
+python -m VideoLingoTran --source public/upload_tmp/dark_knight_negotiate.mp4  \
+                   --output public/lingo_output/prcess_0014 \
+                   --progress-log-path  public/process_logfile/prcess_0014.log/ \
+                   --lingo_trans_type  LINGO_TRANS_TEXT
+
+python -m VideoLingoTran --source public/upload_tmp/dark_knight_negotiate.mp4  \
+                  --output public/lingo_output/prcess_0014 \
+                  --progress-log-path  public/process_logfile/prcess_0014.log/ \
+                  --lingo_trans_type  LINGO_TRANS_DUBBING \
+                  --tts_url http://47.109.204.86:8090/v1/tts \
+                  --tts_text "突然，身边一阵笑声。我看着他们，意气风发地挺直了胸膛，甩了甩那稍显肉感的双臂，轻笑道：\"我身上的肉，是为了掩饰我爆棚的魅力，否则，岂不吓坏了你们呢？\"" \
+                  --tts_voice_type 'prompt' \
+                  --tts_reference_voice_name 'bullet_fly_gy' \
+                  --tts_reference_audio 'public/lingo_prompt/audio/bullet_fly_gy.mp3' \
+                  --tts_reference_text '兔子都知道不吃窝边草,六个人还当着人丈夫,还让人看呸恶心,我都关着灯,这种事你们可以花点钱吗？花点，哪怕嫖呢？花不了多少钱？哪怕偷偷摸摸呢？简直就是土匪土匪都不如, 还说让人家百姓念你们好，就是一句话恶心,钱肯定是挣不着了恶心。' \
+
+
+
+python -m VideoLingoTran --source public/upload_tmp/s24_darknight.mp4  \
+                  --output public/lingo_output/prcess_0004 \
+                  --progress-log-path  public/process_logfile/prcess_0004.log/ \
+                  --lingo_trans_type  LINGO_TRANS_DUBBING \
+                  --tts_url http://47.109.204.86:8090/v1/tts \
+                  --tts_text "突然，身边一阵笑声。我看着他们，意气风发地挺直了胸膛，甩了甩那稍显肉感的双臂，轻笑道：\"我身上的肉，是为了掩饰我爆棚的魅力，否则，岂不吓坏了你们呢？\"" \
+                  --tts_voice_type 'prompt' \
+                  --tts_reference_voice_name 'bullet_fly_jw' \
+                  --tts_reference_audio 'public/lingo_prompt/audio/bullet_fly_jw.mp3' \
+                  --tts_reference_text '我从讲武堂出来,我追随过松伯将军,给他做过手枪队长，后来泸州会战将军负了伤,再后来将军死在了日本,我回来了正碰上军阀混战，天下大乱我只得浪迹江湖落草为寇,牧之也被叫成了麻子,人们不愿意相信一个土匪的名字叫牧之,人们更愿意相信叫麻子,人们特别愿意相信他的脸上应该长着麻子。' \

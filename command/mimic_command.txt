@@ -1,0 +1,51 @@
+
+python infer.py --config configs/prompts/infer.yaml  \
+                --device cpu \
+                --refimg_name natural_bk_openhand/0034.png \
+                --audio_name chinese/echomimicv2_woman.wav \
+                --pose_name 02
+
+python infer.py --config=configs/prompts/infer.yaml
+
+
+
+python large_v3_suit1_process_text.py --source public/upload_tmp/s19_origin.mp4  \
+                  --target public/upload_tmp/hehe.mp4 \
+                  --output public/lingo_output/prcess_123456 \
+                  --progress-log-path  public/process_logfile/channel_123456/ \
+                  --lingo_trans_type  LINGO_TRANS_TEXT
+
+
+python VideoLingoTran.py --source public/upload_tmp/s19_origin.mp4  \
+                  --target public/upload_tmp/hehe.mp4 \
+                  --output public/lingo_output/prcess_123456 \
+                  --progress-log-path  public/process_logfile/channel_123456/ \
+                  --lingo_trans_type  LINGO_TRANS_DUBBING
+
+python VideoLingoTran.py --source public/upload_tmp/s25_1.mp4  \
+                   --target public/upload_tmp/hehe.mp4 \
+                   --output public/lingo_output/prcess_0001 \
+                   --progress-log-path  public/process_logfile/channel_0001.log/ \
+                   --lingo_trans_type  LINGO_TRANS_TEXT
+
+python VideoLingoTran.py --source public/upload_tmp/s25_1.mp4  \
+                   --target public/upload_tmp/hehe.mp4 \
+                   --output public/lingo_output/prcess_0001 \
+                   --progress-log-path  public/process_logfile/channel_0001.log/ \
+                   --lingo_trans_type  LINGO_TRANS_DUBBING
+
+
+python VideoLingoTran.py --source public/upload_tmp/dark_knight_negotiate.mp4  \
+                  --target public/upload_tmp/hehe.mp4 \
+                  --output public/lingo_output/prcess_0002 \
+                  --progress-log-path  public/process_logfile/channel_0002.log/ \
+                  --lingo_trans_type  LINGO_TRANS_TEXT
+
+python VideoLingoTran.py --source public/upload_tmp/dark_knight_negotiate.mp4  \
+                  --target public/upload_tmp/hehe.mp4 \
+                  --output public/lingo_output/prcess_0002 \
+                  --progress-log-path  public/process_logfile/channel_0002.log/ \
+                  --lingo_trans_type  LINGO_TRANS_DUBBING
+
+s25_1.mp4
+

@@ -1,0 +1,10 @@
+
+
+python -m core.tts_api_post.api_client \
+    --text "hi,你好吗？" \
+    --url http://47.109.204.86:8090/v1/tts \
+    --reference_audio public/lingo_prompt/audio/bullet_fly_ljl.mp3  \
+    --reference_text "有什么就说什么嘛 我就是县长夫人 你就只剩下一张嘴 写几个烂剧本的老色鬼，不是我出钱 谁给你买官当县长啊 你别逼我了" \
+    --streaming False \
+    --output "results/wav/oh_No" \
+    --format "wav"
