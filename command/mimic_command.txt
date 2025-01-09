@@ -15,8 +15,8 @@ python infer.py --config configs/prompts/infer.yaml  \
                 --pose_name 01
 
 python infer.py --config configs/prompts/infer.yaml  \
-                --device cuda \
+                --device cpu \
                 --refimg_name natural_bk_openhand/0215.png \
-                --audio_name chinese/bad_group.mp3 \
+                --audio_name chinese/bad_group.wav \
                 --pose_name 02
 

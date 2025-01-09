@@ -472,6 +472,7 @@ class EchoMimicV2Pipeline(DiffusionPipeline):
         audio_fea_final = audio_fea_final.unsqueeze(0)
         
         video_length = min(video_length, audio_frame_num)
+        print(f"video_length:{video_length}   audio_frame_num:{audio_frame_num}")
         
         num_channels_latents = self.denoising_unet.in_channels
         latents = self.prepare_latents_smooth(
