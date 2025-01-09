@@ -197,6 +197,7 @@ def main():
     audio_clip = AudioFileClip(inputs_dict['audio'])
     
     audio_clip = audio_clip.set_duration(args.L / final_fps)
+    print(f"-----> frame num or args.L:{args.L}")
     video = pipe(
         ref_image_pil,
         inputs_dict['audio'],

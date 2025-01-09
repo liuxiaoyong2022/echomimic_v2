@@ -9,12 +9,16 @@ python infer.py --config=configs/prompts/infer.yaml
 
 
 python infer.py --config configs/prompts/infer.yaml  \
+                -L 480
+                --fps 30
                 --device cuda \
-                --refimg_name natural_bk_openhand/0047.png \
+                --refimg_name natural_bk_openhand/0014.png \
                 --audio_name chinese/study.mp3 \
                 --pose_name 01
 
 python infer.py --config configs/prompts/infer.yaml  \
+                -L 720    \
+                --fps 30   \
                 --device cpu \
                 --refimg_name natural_bk_openhand/0215.png \
                 --audio_name chinese/bad_group.wav \
