@@ -1,0 +1,27 @@
+
+conda env list
+conda activate video-face-swap
+
+
+python -m VideoLingoTran --source public/upload_tmp/7.mp4  \
+                  --output public/lingo_output/process_7 \
+                  --progress-log-path  public/process_logfile/process_7.log \
+                  --lingo_trans_type  LINGO_TRANS_TEXT \
+                  --tts_multi_speaker  \
+                  --whisper_language zh \
+                  --whisper_detected_language zh \
+                  --target_language en
+
+
+python -m VideoLingoTran --source public/upload_tmp/7_en.mp4  \
+                  --output public/lingo_output/process_7_en \
+                  --progress-log-path  public/process_logfile/process_7_en.log \
+                  --lingo_trans_type  LINGO_TRANS_TEXT \
+                  --tts_multi_speaker  \
+                  --whisper_language en \
+                  --whisper_detected_language en \
+                  --target_language zh
+
+
+
+

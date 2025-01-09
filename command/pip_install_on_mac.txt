@@ -1,0 +1,3 @@
+
+export FFMPEG_PATH=/usr/share/ffmpeg
+pip install eva-decord==0.6.1

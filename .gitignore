@@ -139,3 +139,5 @@ outputs/*
 checkpoints/*
 
 pretrained_weights/*
+
+public/*
